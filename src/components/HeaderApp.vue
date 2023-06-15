@@ -105,7 +105,6 @@ export default {
 
     img{
         width: 80px;
-        margin-left: 0;
     }
 
     .head-logo{
