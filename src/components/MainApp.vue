@@ -7,6 +7,7 @@
                 </h1>
             </div>
             <div class="main-card">
+
             </div>
         </div>
     </main>
@@ -21,8 +22,9 @@ export default {
 <style lang="scss">
 
     main{
+        background-color: #202020;
         color: white;
-        height: calc(100vh - 50vh - 30px - 150px);
+        height: calc(70vh - 150px - 100px - 150px);
     }
     .content-container{
         height: 150px;
