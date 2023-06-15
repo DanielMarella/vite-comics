@@ -1,6 +1,14 @@
 <template>
     <main>
-        <h1>Main</h1>
+        <div class="content-container">
+            <div class="content">
+                <h1>
+                    &RightArrow;  Content Container &LeftArrow; 
+                </h1>
+            </div>
+            <div class="main-card">
+            </div>
+        </div>
     </main>
 </template>
 
@@ -11,10 +19,26 @@ export default {
 </script>
 
 <style lang="scss">
+
     main{
-        
         color: white;
-        background-color: #202020;
-        padding-top: 6rem;
+        height: calc(100vh - 50vh - 30px - 150px);
+    }
+    .content-container{
+        height: 150px;
+    }
+    
+    .content{
+        height: 120px;
+        margin: 0 150px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .main-card{
+        background-color: #467df5;
+        height: 150px;
+        width: 100%;
     }
 </style>
