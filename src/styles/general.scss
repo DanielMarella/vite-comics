@@ -13,14 +13,13 @@ body{
     background-color: #202020;
 }
 
-
-.head-logo,
-.head-nav{
-    margin: 0 auto;
+.active{
+    color: #467df5;
+    border-bottom: 5px solid #467df5;
 }
 
-.head-logo li,
-.head-nav li{
-    border: 2px solid red;
-    
+a{
+    border: none;
+    color: black;
+    text-decoration: none;
 }
