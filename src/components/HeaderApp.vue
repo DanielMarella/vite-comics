@@ -2,10 +2,8 @@
     <header>
         <div class="header-container">
             <div class="head-logo">
-                <ul>
-                    <li>Logo</li>
-                </ul>
             </div>
+            <img :src="getImagePath(`../assets/img/${imageLogo}`)" alt="">
             <div class="head-nav">
                 <ul>
                     <li>Link</li>
@@ -27,12 +25,23 @@
 <script>
 export default {
     name : 'HeaderApp',
+    data(){
+        return{
+            imageLogo : "dc-logo.png"
+        }
+
+        
+    },
+    methods : { 
+        getImagePath : function(imgPath) {
+        return new URL (imgPath, import.meta.url).href;
+        }
+    }
+
+
 }
 </script>
 <style lang="scss">
-
-    header{
-    }
 
     .header-container{
         width: 100%;
@@ -44,6 +53,9 @@ export default {
         justify-content: space-between;
     }
 
+    img{
+        width: 80px;
+    }
 
     .head-nav{
             ul{
