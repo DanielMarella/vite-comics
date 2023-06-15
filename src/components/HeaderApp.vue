@@ -32,18 +32,15 @@ export default {
 <style lang="scss">
 
     header{
-        position: relative;
-        background-color: #202020;
-        height: 150px;
     }
 
     .header-container{
         width: 100%;
-        padding: 3rem 0;
-        position: relative;
-        top: 30%;
+        height: 10vh;
+        margin-top: 30px;
         background-color: #fff;
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
