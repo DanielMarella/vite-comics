@@ -11,5 +11,10 @@ export default {
 </script>
 
 <style lang="scss">
-    
+    main{
+        
+        color: white;
+        background-color: #202020;
+        padding-top: 6rem;
+    }
 </style>
