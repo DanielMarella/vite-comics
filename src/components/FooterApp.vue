@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-    
+    footer{
+        height: 50vh;
+    }
 </style>
