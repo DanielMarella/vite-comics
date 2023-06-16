@@ -8,9 +8,7 @@
             </div>
             <div class="button">
             </div>
-
             <div class="main-card">
-
             </div>
         </div>
     </main>
@@ -101,16 +99,12 @@ export default {
                             "type": "graphic novel",
                         },
                     ]
-        }
-    },
-
-
-
-
+                }
+            },
 }
-</script>
 
-<style lang="scss">
+</script>
+<style lang="scss" scoped>
 
     main{
         background-color: #202020;
