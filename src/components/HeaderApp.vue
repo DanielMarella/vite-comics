@@ -2,7 +2,7 @@
     <header>
         <div class="header-container">
             <div class="head-logo">
-                <img :src="getImagePath(`../assets/img/${imageLogo}`)" alt="">
+                <img :src="getImagePath(imageLogo)" alt="">
             </div>
             <div class="head-nav">
                 <ul>
@@ -10,7 +10,6 @@
                         <a :href="link.link" >
                             {{ link.name }}
                         </a>
-                        
                     </li>
                 </ul>
             </div>
@@ -84,8 +83,8 @@ export default {
         
     },
     methods : { 
-        getImagePath : function(imgPath) {
-        return new URL (imgPath, import.meta.url).href;
+        getImagePath : function(img) {
+        return new URL (`../assets/img/${img}`, import.meta.url).href;
         }
     }
 
