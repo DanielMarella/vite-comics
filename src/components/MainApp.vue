@@ -2,9 +2,8 @@
     <main>
         <div class="content-container">
             <div class="content">
-                <h1>
-                    &RightArrow;  Content Container &LeftArrow; 
-                </h1>
+                <MainCard v-for="card in products" 
+                :cardElement = "card" />
             </div>
             <div class="main-card">
 
@@ -14,8 +13,31 @@
 </template>
 
 <script>
+import MainCard from './MainCard.vue';
 export default {
     name : 'MainApp',
+
+    components : {
+        MainCard
+    },
+
+    data() {
+        return {
+            products : [
+                {
+                    "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+                    "price": "$19.99",
+                    "series": "Action Comics",
+                    "type": "comic book",
+                },
+                
+            ]
+        }
+    },
+
+
+
+
 }
 </script>
 
@@ -24,19 +46,11 @@ export default {
     main{
         background-color: #202020;
         color: white;
-        height: calc(70vh - 150px - 100px - 150px);
-    }
-    .content-container{
-        height: 150px;
-    }
-    
-    .content{
-        height: 120px;
-        margin: 0 150px;
-        display: flex;
-        align-items: center;
     }
 
+    .content{
+        margin: 0 150px;
+    }
 
     .main-card{
         background-color: #467df5;
