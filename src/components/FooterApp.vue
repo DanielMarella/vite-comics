@@ -47,19 +47,25 @@
                 </ul>
             </div>
         </div>
+        <div class="footer-logo">
+
+        </div>
         <div class="end-footer">
-            <div class="sign-up">
-                <button>SIGN-UP-NOW</button>
-            </div>
-            <div class="social">
-                <ul>
-                    <li><a href="#"></a>link</li>
-                    <li><a href="#"></a>link</li>
-                    <li><a href="#"></a>link</li>
-                    <li><a href="#"></a>link</li>
-                    <li><a href="#"></a>link</li>
-                    <li><a href="#"></a>link</li>
-                </ul>
+            <div class="background">
+
+                <div class="sign-up">
+                    <button>SIGN-UP NOW!</button>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"></a>link</li>
+                        <li><a href="#"></a>link</li>
+                        <li><a href="#"></a>link</li>
+                        <li><a href="#"></a>link</li>
+                        <li><a href="#"></a>link</li>
+                        <li><a href="#"></a>link</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -71,22 +77,35 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     footer{
         color: white;
-        height: calc(95vh - 2px - 150px - 100px - 150px);
+        position: relative;
+        background-color: #303030;
         background-image: url(../assets/img/footer-bg.jpg);
     }
-
+    
+    
+    
     .footer-link {
-        width: 450px;
+        width: 1200px;
         height: 45vh;
         display: flex;
         flex-wrap: wrap;
         padding-top: 40px;
-        margin-left: 150px;
+        margin: 0 auto;
     }
 
+    .footer-logo{
+        position: absolute;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        width: 600px;
+        height: 495px;
+        background-repeat: no-repeat;
+        top: -60px;
+        left: 50%;
+
+    }
     h3{
         margin: 10px 10px;
 
@@ -100,6 +119,7 @@ export default {
         color: grey;
         margin: 5px 0;
         font-size: .9rem;
+
     }
 
     .shop{
@@ -107,19 +127,33 @@ export default {
     }
 
     .end-footer{
-        display: flex;
-        justify-content: space-between;
         background-color: #303030;
-        height: 10vh;
-
-            ul{
-                display: flex;
-
-                li{
-                    margin: 0 10px;
-
+        button{
+            font-size: 1.2rem;
+            color: white;
+            padding: 20px 50px;
+            border: 3px solid #467df5;
+            background-color: #303030;
+            
+        }
+        
+        ul{
+            display: flex;
+            li{
+                margin: 0 10px;
+                    color: white;
+                    text-decoration: none;
                 }
             }
+            .background{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 1200px;
+                margin: 0 auto;
+                padding: 30px 0;
+            }
         }
-
+        
 </style>
