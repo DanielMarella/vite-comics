@@ -21,14 +21,15 @@ export default {
 
 <style lang="scss" scoped>
     .card{
-        width : calc( (100% / 6) - 40px);
-        margin: 0 20px;
+        width : calc( (100% / 6) - 60px);
+        margin: 0 30px;
         margin-top: 30px;
 
         img{
-            width: 150px;
-            height: 150px;
+            width: 190px;
+            height: 190px;
             object-fit: cover;
+            object-position: top;
         }
 
         p{

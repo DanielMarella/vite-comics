@@ -107,12 +107,13 @@ export default {
 <style lang="scss" scoped>
 
     main{
+        margin-top: 50px;
         background-color: #202020;
         color: white;
     }
 
     .content{
-        width: 1000px;
+        width: 1250px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
